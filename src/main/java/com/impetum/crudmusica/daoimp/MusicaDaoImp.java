@@ -31,7 +31,7 @@ public class MusicaDaoImp implements MusicaDao{
 
 	@Override
 	public int delete(int i) {
-		String sql = "DELETE musica WHERE idmusica = ?";
+		String sql = "DELETE FROM musica WHERE idmusica = ?";
 		return jdbc.update(sql, i);
 	}
 
